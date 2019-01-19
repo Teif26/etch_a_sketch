@@ -19,7 +19,12 @@ body{
 header >p{
     margin-top:0;
     margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
     
+}
+#header_text{
+    padding-right: 15px;
 }
 #container_main{
     margin-right: auto;
@@ -33,9 +38,7 @@ header >p{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-#container_inner::before{
-        content: "\200B";
-     }
+
 
 #container_inner{
     display: grid;
@@ -46,15 +49,39 @@ margin-right:auto;
 margin-left:auto;
 margin-top: 20px;
 border: 3px #fff groove;
-border-top-right-radius: 15px;
+box-shadow: 0px 1px 0 rgba(255,255,255,0.08), 1px 0px 0 rgba(255,255,255,0.08),
+                1px 2px 0 rgba(255,255,255,0.08), 2px 1px 0 rgba(255,255,255,0.08),
+                2px 3px 0 rgba(255,255,255,0.08), 3px 2px 0 rgba(255,255,255,0.08),
+                3px 4px 0 rgba(255,255,255,0.08), 4px 3px 0 rgba(255,255,255,0.08),
+                4px 5px 0 rgba(255,255,255,0.08), 5px 4px 0 rgba(255,255,255,0.08),
+
+                -0px -1px 0 rgba(0,0,0,0.05), -1px -0px 0 rgba(0,0,0,0.05),
+                -1px -2px 0 rgba(0,0,0,0.05), -2px -1px 0 rgba(0,0,0,0.05),
+                -2px -3px 0 rgba(0,0,0,0.05), -3px -2px 0 rgba(0,0,0,0.05),
+                -3px -4px 0 rgba(0,0,0,0.05), -4px -3px 0 rgba(0,0,0,0.05),
+                -4px -5px 0 rgba(0,0,0,0.05), -5px -4px 0 rgba(0,0,0,0.05);
+
+ border-top-right-radius: 15px;
 border-top-left-radius: 15px;
 border-bottom-right-radius: 15px;
-border-bottom-left-radius: 15px;
+border-bottom-left-radius: 15px; 
 }
 #container_main::before{
     content: "\200B";
 }
 .square{
     background: black;
+    overflow: hidden;
     
+}
+.logo{
+    font-family: 'Great Vibes', cursive;
+    font-size:36px;
+    text-transform: capitalize;
+}
+#span2{
+    padding-left: 18px;
+}
+.span1{
+    padding-right:15px;
 }
