@@ -70,8 +70,9 @@ border-bottom-left-radius: 15px;
     content: "\200B";
 }
 .square{
+    --opacity: 0;
     background: black;
-    overflow: hidden;
+    opacity: var(--opacity)
     
 }
 .logo{
