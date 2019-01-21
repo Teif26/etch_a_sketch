@@ -1,3 +1,4 @@
+
 html, body > *{
     margin:0px;
     padding:0px;
@@ -9,13 +10,43 @@ body{
     margin: 0;
 }
 #header-div{
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 15px;
+    color:white;
+} 
+  /*  font-family: Arial, Helvetica, sans-serif;
     font-size: 3.6em;
     color: white;
-    text-align: center;
-    background: blue;
-    margin-top:0;  
-}
+   
+    background: red;
+    margin-top:10;  
+    padding-top: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 1px 0 rgba(255,255,255,0.05) inset, 1px 0px 0 rgba(255,255,255,0.05) inset,
+                1px 2px 0 rgba(255,255,255,0.05) inset, 2px 1px 0 rgba(255,255,255,0.05) inset,
+                2px 3px 0 rgba(255,255,255,0.05) inset, 3px 2px 0 rgba(255,255,255,0.05) inset,
+                3px 4px 0 rgba(255,255,255,0.05) inset, 4px 3px 0 rgba(255,255,255,0.05) inset,
+                4px 5px 0 rgba(255,255,255,0.05) inset, 5px 4px 0 rgba(255,255,255,0.05) inset,
+                5px 6px 0 rgba(255,255,255,0.05) inset, 6px 5px 0 rgba(255,255,255,0.05) inset,
+                6px 7px 0 rgba(255,255,255,0.05) inset, 7px 6px 0 rgba(255,255,255,0.05) inset,
+                7px 9px 0 rgba(255,255,255,0.05) inset, 8px 7px 0 rgba(255,255,255,0.05) inset,
+                8px 9px 0 rgba(255,255,255,0.05) inset, 9px 8px 0 rgba(255,255,255,0.05) inset,
+
+                -0px -1px 0 rgba(0,0,0,0.05) inset, -1px -0px 0 rgba(0,0,0,0.05) inset,
+                -1px -2px 0 rgba(0,0,0,0.05) inset, -2px -1px 0 rgba(0,0,0,0.05) inset,
+                -2px -3px 0 rgba(0,0,0,0.05) inset, -3px -2px 0 rgba(0,0,0,0.05) inset,
+                -3px -4px 0 rgba(0,0,0,0.05) inset, -4px -3px 0 rgba(0,0,0,0.05) inset,
+                -4px -5px 0 rgba(0,0,0,0.05) inset, -5px -4px 0 rgba(0,0,0,0.05) inset,
+                -5px -6px 0 rgba(0,0,0,0.05) inset, -6px -5px 0 rgba(0,0,0,0.05) inset,
+                -6px -7px 0 rgba(0,0,0,0.05) inset, -7px -6px 0 rgba(0,0,0,0.05) inset,
+                -7px -9px 0 rgba(0,0,0,0.05) inset, -8px -7px 0 rgba(0,0,0,0.05) inset,
+                -8px -9px 0 rgba(0,0,0,0.05) inset, -9px -8px 0 rgba(0,0,0,0.05) inset,
+
+                
+} */
+
+
 header >p{
     margin-top:0;
     margin-bottom: 10px;
@@ -26,7 +57,40 @@ header >p{
 #header_text{
     padding-right: 15px;
 }
+input[type=button]{
+    --bt-height: 80px;
+    --bt-width: 80px;
+    border: 2px ridge;
+    border-radius: 50%;
+    height: var(--bt-height);
+    width: var(--bt-width);
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.5), 0 0 3px rgba(0,0,0,0.7) inset;
+    background: radial-gradient(ellipse at center, rgba(224,224,224,1) 0%,rgba(242,242,242,1) 22%,rgba(255,255,255,1) 100%);
+
+    
+    
+}
+#r-button-div{
+ margin-bottom: 15px;
+ position: absolute;
+ bottom: 0;
+ right:75px;
+ box-sizing: border-box;
+ 
+}
+#c-button-div{
+    margin-bottom: 15px;
+    position: absolute;
+    bottom: 0;
+    left:75px;
+    box-sizing: border-box;
+    
+   }
+   
+
 #container_main{
+    position:relative;
+    margin-top: 25px;
     margin-right: auto;
     margin-left:auto; 
     background: red;
@@ -37,18 +101,41 @@ header >p{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    box-shadow: 0px 1px 0 rgba(255,255,255,0.05) inset, 1px 0px 0 rgba(255,255,255,0.05) inset,
+                1px 2px 0 rgba(255,255,255,0.05) inset, 2px 1px 0 rgba(255,255,255,0.05) inset,
+                2px 3px 0 rgba(255,255,255,0.05) inset, 3px 2px 0 rgba(255,255,255,0.05) inset,
+                3px 4px 0 rgba(255,255,255,0.05) inset, 4px 3px 0 rgba(255,255,255,0.05) inset,
+                4px 5px 0 rgba(255,255,255,0.05) inset, 5px 4px 0 rgba(255,255,255,0.05) inset,
+                5px 6px 0 rgba(255,255,255,0.05) inset, 6px 5px 0 rgba(255,255,255,0.05) inset,
+                6px 7px 0 rgba(255,255,255,0.05) inset, 7px 6px 0 rgba(255,255,255,0.05) inset,
+                7px 9px 0 rgba(255,255,255,0.05) inset, 8px 7px 0 rgba(255,255,255,0.05) inset,
+                8px 9px 0 rgba(255,255,255,0.05) inset, 9px 8px 0 rgba(255,255,255,0.05) inset,
+
+                -0px -1px 0 rgba(0,0,0,0.05) inset, -1px -0px 0 rgba(0,0,0,0.05) inset,
+                -1px -2px 0 rgba(0,0,0,0.05) inset, -2px -1px 0 rgba(0,0,0,0.05) inset,
+                -2px -3px 0 rgba(0,0,0,0.05) inset, -3px -2px 0 rgba(0,0,0,0.05) inset,
+                -3px -4px 0 rgba(0,0,0,0.05) inset, -4px -3px 0 rgba(0,0,0,0.05) inset,
+                -4px -5px 0 rgba(0,0,0,0.05) inset, -5px -4px 0 rgba(0,0,0,0.05) inset,
+                -5px -6px 0 rgba(0,0,0,0.05) inset, -6px -5px 0 rgba(0,0,0,0.05) inset,
+                -6px -7px 0 rgba(0,0,0,0.05) inset, -7px -6px 0 rgba(0,0,0,0.05) inset,
+                -7px -9px 0 rgba(0,0,0,0.05) inset, -8px -7px 0 rgba(0,0,0,0.05) inset,
+                -8px -9px 0 rgba(0,0,0,0.05) inset, -9px -8px 0 rgba(0,0,0,0.05) inset,
+
+                0 0 3px rgba(0,0,0,0.3), 2px 2px 3px rgba(0,0,0,0.3);
 }
 
 
+
+
 #container_inner{
-    display: grid;
+display: grid;
 background-color: #fff;
 width: 72%;
-height: 86%;
+height: 72%;
 margin-right:auto;
 margin-left:auto;
 margin-top: 20px;
-border: 3px #fff groove;
+border: 3px #fff solid;
 box-shadow: 0px 1px 0 rgba(255,255,255,0.08), 1px 0px 0 rgba(255,255,255,0.08),
                 1px 2px 0 rgba(255,255,255,0.08), 2px 1px 0 rgba(255,255,255,0.08),
                 2px 3px 0 rgba(255,255,255,0.08), 3px 2px 0 rgba(255,255,255,0.08),
@@ -61,14 +148,12 @@ box-shadow: 0px 1px 0 rgba(255,255,255,0.08), 1px 0px 0 rgba(255,255,255,0.08),
                 -3px -4px 0 rgba(0,0,0,0.05), -4px -3px 0 rgba(0,0,0,0.05),
                 -4px -5px 0 rgba(0,0,0,0.05), -5px -4px 0 rgba(0,0,0,0.05);
 
- border-top-right-radius: 15px;
+border-top-right-radius: 15px;
 border-top-left-radius: 15px;
 border-bottom-right-radius: 15px;
 border-bottom-left-radius: 15px; 
 }
-#container_main::before{
-    content: "\200B";
-}
+
 .square{
     --opacity: 0;
     background: black;
@@ -79,6 +164,7 @@ border-bottom-left-radius: 15px;
     font-family: 'Great Vibes', cursive;
     font-size:36px;
     text-transform: capitalize;
+    color:gold;
 }
 #span2{
     padding-left: 18px;
@@ -86,3 +172,16 @@ border-bottom-left-radius: 15px;
 .span1{
     padding-right:15px;
 }
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
