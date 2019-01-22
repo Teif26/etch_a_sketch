@@ -1,7 +1,8 @@
+const resolutionBtn = document.getElementById("resolution")
 const shakeBtn = document.getElementById("shake")
 const rdmColor = document.getElementById("rdmColor")
 const gridContainer = document.querySelector("#container_inner");
-var size = 136;
+var size = 36;
 
 const initializeGrid = (gridContainer,size) =>{
   for(let i = 0;i<=size;i++){
@@ -26,14 +27,23 @@ const setGridSize = (gridContainer, size)=>{
     gridContainer.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 };
 
+resolutionBtn.addEventListener("click", setResoltion)
+
+function setResoltion(){
+    let newSize = prompt("Enter a number between 16 and 112");
+    initializeGrid(gridContainer,newSize)
+    
+};
+
 shakeBtn.addEventListener("click", function(){
     var main = document.getElementById("container_main")
  main.style.animation = "shake .5s 1";
  var newScreen = document.querySelectorAll(".square");
    newScreen.forEach((div)=>{
-    return div.style.setProperty("opacity", 0)   
+    return div.style.setProperty("--opacity", 0)  ;
+    
    })
- 
+  
 
 })
 
