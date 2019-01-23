@@ -1,12 +1,13 @@
-const resolutionBtn = document.getElementById("resolution")
-const shakeBtn = document.getElementById("shake")
-const rdmColor = document.getElementById("rdmColor")
+
+const resolutionBtn = document.getElementById("resolution");
+const shakeBtn = document.getElementById("shake");
+const rdmColor = document.getElementById("rdmColor");
 const gridContainer = document.querySelector("#container_inner");
 var size = 36;
 
 const initializeGrid = (gridContainer,size) =>{
   for(let i = 0;i<=size;i++){
-      setGridSize(gridContainer,size)
+      setGridSize(gridContainer,size);
       for(let j = 0;j<=size;j++){
           const square = document.createElement("div");
           square.classList.add("square");
@@ -14,9 +15,9 @@ const initializeGrid = (gridContainer,size) =>{
          
          square.addEventListener("mouseover", (el) =>{
          const opacity = getComputedStyle(el.target).getPropertyValue("--opacity");
-            if(opacity <= 1){
+            if(opacity < 1){
                 return el.target.style.setProperty("--opacity", parseFloat(opacity,10) + .1);
-            }
+            };
 
           });
       };
@@ -31,30 +32,29 @@ resolutionBtn.addEventListener("click", setResoltion)
 
 function setResoltion(){
     let newSize = prompt("Enter a number between 16 and 112");
-    initializeGrid(gridContainer,newSize)
+    initializeGrid(gridContainer,newSize);
+    var newScreen = document.querySelectorAll(".square");
+    clearScreen(newScreen);
     
 };
 
 shakeBtn.addEventListener("click", function(){
-    var main = document.getElementById("container_main")
+    var main = document.getElementById("container_main");
  main.style.animation = "shake .5s 1";
  var newScreen = document.querySelectorAll(".square");
-   newScreen.forEach((div)=>{
-    return div.style.setProperty("--opacity", 0)  ;
-    
-   })
+   clearScreen(newScreen);
   
-
+    
 })
 
-// function shakeInitialize(){
-//  var main = document.getElementById("container_main")
-//  main.style.animation = "shake .5s 1"
-//  const newScreen = document.querySelectorAll(".square")
- 
-//  return newScreen.style.setProperty("opacity, 0")
-// }
+function changeColor(){
+
+}
 
 
-
-initializeGrid(gridContainer,size)
+function clearScreen(newScreen) {
+    newScreen.forEach((div) => {
+        return div.style.setProperty("--opacity", 0);
+    });
+}
+window.onload = initializeGrid(gridContainer,size);

@@ -6,7 +6,7 @@ html, body > *{
 }
 body{
     
-    background: skyblue;
+    background: radial-gradient(blue,skyblue);
     margin: 0;
 }
 #header-div{
@@ -90,7 +90,7 @@ input[type=button]{
 
 #container_main{
     position:relative;
-    margin-top: 25px;
+    margin-top: 5px;
     margin-right: auto;
     margin-left:auto; 
     background: red;
@@ -129,7 +129,7 @@ input[type=button]{
 
 #container_inner{
 display: grid;
-background-color: #fff;
+background: radial-gradient(ellipse at center, rgba(224,224,224,1) 0%,rgba(242,242,242,1) 22%,rgba(255,255,255,1) 100%);
 width: 72%;
 height: 72%;
 margin-right:auto;
