@@ -14,37 +14,7 @@ body{
     padding-top: 15px;
     color:white;
 } 
-  /*  font-family: Arial, Helvetica, sans-serif;
-    font-size: 3.6em;
-    color: white;
-   
-    background: red;
-    margin-top:10;  
-    padding-top: 15px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    box-shadow: 0px 1px 0 rgba(255,255,255,0.05) inset, 1px 0px 0 rgba(255,255,255,0.05) inset,
-                1px 2px 0 rgba(255,255,255,0.05) inset, 2px 1px 0 rgba(255,255,255,0.05) inset,
-                2px 3px 0 rgba(255,255,255,0.05) inset, 3px 2px 0 rgba(255,255,255,0.05) inset,
-                3px 4px 0 rgba(255,255,255,0.05) inset, 4px 3px 0 rgba(255,255,255,0.05) inset,
-                4px 5px 0 rgba(255,255,255,0.05) inset, 5px 4px 0 rgba(255,255,255,0.05) inset,
-                5px 6px 0 rgba(255,255,255,0.05) inset, 6px 5px 0 rgba(255,255,255,0.05) inset,
-                6px 7px 0 rgba(255,255,255,0.05) inset, 7px 6px 0 rgba(255,255,255,0.05) inset,
-                7px 9px 0 rgba(255,255,255,0.05) inset, 8px 7px 0 rgba(255,255,255,0.05) inset,
-                8px 9px 0 rgba(255,255,255,0.05) inset, 9px 8px 0 rgba(255,255,255,0.05) inset,
-
-                -0px -1px 0 rgba(0,0,0,0.05) inset, -1px -0px 0 rgba(0,0,0,0.05) inset,
-                -1px -2px 0 rgba(0,0,0,0.05) inset, -2px -1px 0 rgba(0,0,0,0.05) inset,
-                -2px -3px 0 rgba(0,0,0,0.05) inset, -3px -2px 0 rgba(0,0,0,0.05) inset,
-                -3px -4px 0 rgba(0,0,0,0.05) inset, -4px -3px 0 rgba(0,0,0,0.05) inset,
-                -4px -5px 0 rgba(0,0,0,0.05) inset, -5px -4px 0 rgba(0,0,0,0.05) inset,
-                -5px -6px 0 rgba(0,0,0,0.05) inset, -6px -5px 0 rgba(0,0,0,0.05) inset,
-                -6px -7px 0 rgba(0,0,0,0.05) inset, -7px -6px 0 rgba(0,0,0,0.05) inset,
-                -7px -9px 0 rgba(0,0,0,0.05) inset, -8px -7px 0 rgba(0,0,0,0.05) inset,
-                -8px -9px 0 rgba(0,0,0,0.05) inset, -9px -8px 0 rgba(0,0,0,0.05) inset,
-
-                
-} */
+ 
 
 
 header >p{
@@ -165,12 +135,15 @@ border-bottom-left-radius: 15px;
     font-size:36px;
     text-transform: capitalize;
     color:gold;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
 }
 #span2{
     padding-left: 18px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
 }
 .span1{
     padding-right:15px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
 }
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
