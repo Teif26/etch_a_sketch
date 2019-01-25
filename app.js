@@ -6,9 +6,10 @@ const gridContainer = document.querySelector("#container_inner");
 var size = 36;
 
 const initializeGrid = (gridContainer,size) =>{
-  for(let i = 0;i<=size;i++){
+ 
+    for(let i = 0;i<size;i++){
       setGridSize(gridContainer,size);
-      for(let j = 0;j<=size;j++){
+      for(let j = 0;j<size;j++){
           const square = document.createElement("div");
           square.classList.add("square");
           gridContainer.appendChild(square);
@@ -33,28 +34,45 @@ resolutionBtn.addEventListener("click", setResoltion)
 function setResoltion(){
     let newSize = prompt("Enter a number between 16 and 112");
     initializeGrid(gridContainer,newSize);
-    var newScreen = document.querySelectorAll(".square");
-    clearScreen(newScreen);
+    eraseCanvas();
     
 };
 
 shakeBtn.addEventListener("click", function(){
-    var main = document.getElementById("container_main");
- main.style.animation = "shake .5s 1";
- var newScreen = document.querySelectorAll(".square");
-   clearScreen(newScreen);
+    shakeScreen();
+    eraseCanvas();
   
     
-})
+});
 
-function changeColor(){
+ rdmColor.addEventListener("click",setRdmColor)
 
+function shakeScreen() {
+    var main = document.getElementById("container_main");
+    main.style.animation = "shake .5s 1";
+}
+function eraseCanvas() {
+    var newScreen = document.querySelectorAll(".square");
+    resetOpacity(newScreen);
+};
+
+function setRdmColor(){
+   var square = document.querySelectorAll(".square")
+   var currentSize = Math.sqrt(Math.round(square.length));
+    Array.from(document.querySelectorAll('.square')).forEach(el => el.remove());
+    initializeGrid(gridContainer,currentSize);
+    square = Array.from(document.querySelectorAll(".square"))
+    
+    square.forEach(div => div.onmouseover = randomColor(div));
+}
+ 
+randomColor = function(e) {
+	e.style.background =  "#" + (Math.random()	* 0xFFFFFF<<0).toString(16);
 }
 
-
-function clearScreen(newScreen) {
+function resetOpacity(newScreen) {
     newScreen.forEach((div) => {
         return div.style.setProperty("--opacity", 0);
     });
-}
-window.onload = initializeGrid(gridContainer,size);
+};
+initializeGrid(gridContainer,size);

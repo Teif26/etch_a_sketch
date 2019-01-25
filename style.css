@@ -28,6 +28,8 @@ header >p{
     padding-right: 15px;
 }
 input[type=button]{
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+    color: yellowgreen;
     --bt-height: 80px;
     --bt-width: 80px;
     border: 2px ridge;
