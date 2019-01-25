@@ -33,8 +33,12 @@ resolutionBtn.addEventListener("click", setResoltion)
 
 function setResoltion(){
     let newSize = prompt("Enter a number between 16 and 112");
+    if(newSize>=16 && newSize<112){
     initializeGrid(gridContainer,newSize);
     eraseCanvas();
+}else{
+    alert("Number not within range!");
+}
     
 };
 
